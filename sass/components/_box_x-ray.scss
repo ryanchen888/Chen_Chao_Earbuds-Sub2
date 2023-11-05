@@ -1,0 +1,25 @@
+
+@media screen and (max-width:390px) {
+    .box_x-ray {
+        height: 500px;
+    }
+}
+
+@media screen and (min-width:391px) and (max-width:768px) {
+    .box_x-ray {
+        height: 400px;
+        grid-column: 3/7;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1200px) {
+    .box_x-ray {
+        height: 450px;
+    }
+}
+
+@media screen and (min-width:1201px) {
+    .box_x-ray {
+        height: 450px;
+    }
+}

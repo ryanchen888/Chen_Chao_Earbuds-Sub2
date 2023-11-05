@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <title>VOCO Earbuds</title>
+</head>
+<body>
+    <header id="main-nav">
+        <div class="box_nav">
+            <div class="grid-con">
+                <img id="logo" class="col-start-1 col-end-2 m-col-start-1 m-col-end-2 l-col-start-2 l-col-end-3" src="images/logo.svg" alt="">
+                <ul id="nav" class="col-start-2 col-end-5 m-col-start-4 m-col-end-10 l-col-start-6 l-col-end-12">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">VIDEO</a></li>
+                    <li><a href="#">HOT-SPOTS</a></li>
+                    <li><a href="#">X-RAY</a></li>
+                    <li><a href="#">PICS</a></li>
+                </ul>    
+            </div>
+        </div>
+    </header>
+
+    <div class="box_video">
+        <div id="video" class="grid-con">Video</div>
+    </div>
+
+    <div class="box_hot-spots">
+        <div id="HP-box" class="grid-con">
+            <div id="hotSpots-pic" class="col-span m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-11"><model-viewer id="model" src="images/earbuds_1.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="images/poster.webp" shadow-intensity="1">
+
+                <button class="Hotspot" slot="hotspot-1" data-position="-0.1553309522259991m 196.75075960981792m 355.6584497632459m" data-normal="0.21885651281984841m 0.9730279781878786m 0.07292722715107716m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-1"></div>
+                </button>
+          
+                <button class="Hotspot" slot="hotspot-2" data-position="39.178813729806954m 70.6227131746494m 339.9483671265645m" data-normal="0.7379483136422101m -0.3541326360979166m -0.5744757283323281m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-2"></div>
+                </button>
+                
+                <button class="Hotspot" slot="hotspot-3" data-position="29.404639978382665m 27.178838156281856m 292.8381266495884m" data-normal="0.9769237824227752m -0.0661242855688698m -0.20309481085144687m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-3"></div>
+                </button>
+                
+                <button class="Hotspot" slot="hotspot-4" data-position="-0.17319318985299503m 130.1636845325197m 207.60880965993317m" data-normal="4.278030866133517e-17m -0.9370006123689325m -0.34932771493290576m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-4"></div>
+                </button>
+          
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+          
+                <div id="ar-prompt">
+                    <img src="images/ar_hand_prompt.png">
+                </div>
+          
+              </model-viewer></div>
+            <div id="text-box" class="col-span m-col-start-7 m-col-end-10 l-col-start-9 l-col-end-13">Text</div>
+        </div>
+    </div>
+    
+    <div class="box_x-ray">
+        <div class="grid-con">
+            <div class="col-start-1 col-end-5 m-col-start-2 m-col-end-4 l-col-start-3 l-col-end-11">X-RAY</div>
+        </div>
+    </div>
+
+    <div class="box_pic">
+        <div id="pic1">
+            <img class="lightbox-trigger" src="images/1.jpg" alt="">
+        </div>
+        <div id="pic2">
+            <img class="lightbox-trigger" src="images/2.jpg" alt="">
+        </div>
+        <div id="pic3">
+            <img class="lightbox-trigger" src="images/3.jpg" alt="">
+        </div>
+        <div id="pic4">
+            <img class="lightbox-trigger" src="images/4.jpg" alt="">
+        </div>
+        <div id="pic5">
+            <img class="lightbox-trigger" src="images/5.jpg" alt="">
+        </div>
+        <div id="pic6">
+            <img class="lightbox-trigger" src="images/6.jpg" alt="">
+        </div>
+    </div>
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" id="closeLightbox">&times;</span>
+        <img class="lightbox-content" src="images/1.jpg" alt="Large Image 1">
+    </div>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
