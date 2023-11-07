@@ -1,21 +1,24 @@
-// pics-light boxes
-document.addEventListener('DOMContentLoaded', function() {
-    var lightboxTriggers = document.querySelectorAll('.lightbox-trigger');
-    var lightbox = document.getElementById('lightbox');
-    var closeLightbox = document.getElementById('closeLightbox');
-    var lightboxContent = document.querySelector('.lightbox-content');
 
-    lightboxTriggers.forEach(function(trigger) {
-        trigger.addEventListener('click', function() {
-            lightboxContent.src = trigger.src;
-            lightbox.style.display = 'block';
-        });
-    });
+// scroll to section smooth
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll("#nav a");
 
-    closeLightbox.addEventListener('click', function() {
-        lightbox.style.display = 'none';
-    });
+  navLinks.forEach((link) => {
+      link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = link.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+              targetElement.scrollIntoView({
+                  behavior: "smooth", 
+              });
+          }
+      });
+  });
 });
+
+
 
 // hot-spots
 
@@ -92,4 +95,64 @@ document.addEventListener('DOMContentLoaded', function() {
       hotspot.addEventListener("mouseover", showInfo);
       hotspot.addEventListener("mouseout", hideInfo);
     });
-  })();
+ 
+
+  // x-ray part
+
+    // variables
+    let imageCon = document.querySelector('#imageCon'),
+        drag = document.querySelector('.image-drag'),
+        left = document.querySelector('.image-left'),
+        dragging = false,
+        min = 0,
+        max = imageCon.offsetWidth;
+
+    function onDown() {
+        dragging = true;
+        console.log("on Down called");
+    }
+
+    function onUp() {
+        dragging = false;
+        console.log("on Up called");
+    }
+
+    function onMove(event) {
+        if(dragging===true) {
+            let x = event.clientX - imageCon.getBoundingClientRect().left;   
+
+            if (x < min) {
+                x = min;
+            } else if (x > max) {
+                x = max-10;
+            }
+
+            drag.style.left = x + 'px';
+            left.style.width = x + 'px';
+        }
+    }
+    drag.addEventListener('mousedown',onDown);
+    document.body.addEventListener('mouseup', onUp);
+    document.body.addEventListener('mousemove', onMove);
+
+})();
+
+// pics-light boxes
+document.addEventListener('DOMContentLoaded', function() {
+  var lightboxTriggers = document.querySelectorAll('.lightbox-trigger');
+  var lightbox = document.getElementById('lightbox');
+  var closeLightbox = document.getElementById('closeLightbox');
+  var lightboxContent = document.querySelector('.lightbox-content');
+
+  lightboxTriggers.forEach(function(trigger) {
+      trigger.addEventListener('click', function() {
+          lightboxContent.src = trigger.src;
+          lightbox.style.display = 'block';
+      });
+  });
+
+  closeLightbox.addEventListener('click', function() {
+      lightbox.style.display = 'none';
+  });
+});
+

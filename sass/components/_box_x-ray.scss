@@ -1,25 +1,60 @@
 
-@media screen and (max-width:390px) {
-    .box_x-ray {
-        height: 500px;
-    }
+.box_x-ray {
+    background-color: #272727;
 }
 
-@media screen and (min-width:391px) and (max-width:768px) {
-    .box_x-ray {
-        height: 400px;
-        grid-column: 3/7;
-    }
+#outerShell {
+    display: none;
 }
 
-@media screen and (min-width:769px) and (max-width:1200px) {
-    .box_x-ray {
-        height: 450px;
-    }
+@media screen and (min-width: 1200px) {
+
+#mobile-table-view {
+    display: none;
 }
 
-@media screen and (min-width:1201px) {
-    .box_x-ray {
-        height: 450px;
-    }
+#outerShell {
+    display: block;
+    max-width: 1200px;
+    border: solid 1px #666;
+    border-radius: 10px;
+}
+
+#imageCon {
+    position: relative;
+    max-width: 1200px;
+    height: 50vh;
+    
+}
+
+.slideImage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.image-right {
+    background: url(../images/earbuds_x-ray.jpg) no-repeat;
+    background-size: auto;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.image-left {
+    background: url(../images/earbuds.jpg) no-repeat;
+    background-size: auto;
+    background-position: center center;
+    width: 50%;
+    background-attachment: fixed;
+}
+
+.image-drag {
+    background-color: #666;
+    left: 50%;
+    width: 4px;
+    cursor: pointer;
+}
+
 }
