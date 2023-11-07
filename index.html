@@ -14,17 +14,17 @@
                 <img id="logo" class="col-start-1 col-end-2 m-col-start-1 m-col-end-2 l-col-start-2 l-col-end-3" src="images/logo.svg" alt="">
                 <ul id="nav" class="col-start-2 col-end-5 m-col-start-4 m-col-end-10 l-col-start-6 l-col-end-12">
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="#">VIDEO</a></li>
-                    <li><a href="#">HOT-SPOTS</a></li>
-                    <li><a href="#">X-RAY</a></li>
-                    <li><a href="#">PICS</a></li>
+                    <li><a href="#video">VIDEO</a></li>
+                    <li><a href="#HP-box">HOT-SPOTS</a></li>
+                    <li><a href="#x-ray">X-RAY</a></li>
+                    <li><a href="#pics">PICS</a></li>
                 </ul>    
             </div>
         </div>
     </header>
 
-    <div class="box_video">
-        <div id="video" class="grid-con">Video</div>
+    <div class="box_video"  id="video">
+        <div class="grid-con">Video</div>
     </div>
 
     <div class="box_hot-spots">
@@ -60,13 +60,26 @@
         </div>
     </div>
     
-    <div class="box_x-ray">
+    <div class="box_x-ray" id="x-ray">
         <div class="grid-con">
-            <div class="col-start-1 col-end-5 m-col-start-2 m-col-end-4 l-col-start-3 l-col-end-11">X-RAY</div>
+            <section class="col-span-full">
+                <div id="mobile-table-view">
+                    <img src="images/earbuds_x-ray.jpg" alt="">
+                    <img src="images/earbuds.jpg" alt="">
+                </div>
+                <h2 class="hidden">X-Ray revealer</h2>
+                <div id="outerShell">
+                    <div id="imageCon">
+                        <div class="slideImage image-right"></div>
+                        <div class="slideImage image-left"></div>
+                        <div class="slideImage image-drag"></div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
-    <div class="box_pic">
+    <div class="box_pic" id="pics">
         <div id="pic1">
             <img class="lightbox-trigger" src="images/1.jpg" alt="">
         </div>
