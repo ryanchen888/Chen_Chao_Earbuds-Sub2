@@ -334,7 +334,7 @@ model-viewer > #ar-prompt > img {
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   #mobile-table-view {
     display: none;
   }
@@ -359,15 +359,11 @@ model-viewer > #ar-prompt > img {
   .image-right {
     background: url(../images/earbuds_x-ray.jpg) no-repeat;
     background-size: auto;
-    background-position: center center;
-    background-attachment: fixed;
   }
   .image-left {
     background: url(../images/earbuds.jpg) no-repeat;
     background-size: auto;
-    background-position: center center;
     width: 50%;
-    background-attachment: fixed;
   }
   .image-drag {
     background-color: #666;
