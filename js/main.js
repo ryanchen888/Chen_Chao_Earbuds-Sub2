@@ -29,19 +29,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const infoBoxes = [
       { title: "Multi-function Control Button", 
         text:  "Multifunction button on Bluetooth earphones: Controls playback, calls, and voice assistants with ease.", 
-        image: "images/01.jpg"
+        image: "images/Button.jpg"
       },
       { title: "Intelligent Rotating Axis", 
         text:  "It can be manually rotated to suit each person's ear canal, catering for the different needs of each individual.", 
-        image: "images/02.jpg"
+        image: "images/Axis.jpg"
       },
       { title: "Noise-canceling Earplugs", 
         text:  "Comfortable earplugs made of eco-friendly silicone, while different sizes are available for replacement.", 
-        image: "images/03.jpg"
+        image: "images/Earplugs.jpg"
       },
       { title: "Charging Contacts", 
         text:  "VOCO's exclusive patented fast-charging technology allows the headset to be fully charged to 80% in less than 10 minutes.", 
-        image: "images/04.jpg"
+        image: "images/Charging.jpg"
       }
     ]
   
@@ -95,6 +95,9 @@ document.addEventListener("DOMContentLoaded", function () {
       hotspot.addEventListener("mouseover", showInfo);
       hotspot.addEventListener("mouseout", hideInfo);
     });
+
+
+    
  
 
   // x-ray part
@@ -134,8 +137,9 @@ document.addEventListener("DOMContentLoaded", function () {
     drag.addEventListener('mousedown',onDown);
     document.body.addEventListener('mouseup', onUp);
     document.body.addEventListener('mousemove', onMove);
-
 })();
+
+
 
 // pics-light boxes
 document.addEventListener('DOMContentLoaded', function() {
