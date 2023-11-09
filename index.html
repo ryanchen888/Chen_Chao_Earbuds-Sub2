@@ -79,6 +79,10 @@
         </div>
     </div>
 
+    <div class="col-span-full">
+        <canvas id="explode-view"></canvas> 
+    </div>
+
     <div class="box_pic" id="pics">
         <div id="pic1">
             <img class="lightbox-trigger" src="images/1.jpg" alt="">
@@ -101,7 +105,7 @@
     </div>
     <div id="lightbox" class="lightbox">
         <span class="close-lightbox" id="closeLightbox">&times;</span>
-        <img class="lightbox-content" src="images/1.jpg" alt="Large Image 1">
+        <img class="lightbox-content no-hover-effect" src="images/1.jpg" alt="Large Image 1">
     </div>
 
 
@@ -109,8 +113,11 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script> -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+    <script src="js/explode-view.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

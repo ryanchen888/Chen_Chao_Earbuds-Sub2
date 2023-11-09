@@ -11,8 +11,9 @@ img {
     border-radius: 5px;
 }
 
-img:hover {
-  opacity: 90%;
+
+.box_pic img:hover {
+  opacity: 70%;
 }
 
 .lightbox {
@@ -25,6 +26,8 @@ img:hover {
   background-color: rgba(255, 255, 255, 0.8);
   z-index: 999;
 }
+
+
 
 .lightbox-content {
   display: block;
@@ -41,13 +44,14 @@ img:hover {
   top: 25%;
   right: 20px;
   font-size: 100px;
-  color: #272727;
+  color: #454545;
   cursor: pointer;
 }
 
 .close-lightbox:hover {
   color: #999999;
 }
+
 
   
   
