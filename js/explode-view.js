@@ -1,40 +1,33 @@
+
+
 (() => {
-    const canvas = document.querySelector("#explode-view");
-    const context = canvas.getContext("2d");
-    canvas.width = 1920;
-    canvas.height = 1080;
-    const frameCount = 90;
-    const images = [];
-    const buds = {
-        frame: 0
+
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollToPlugin);
+
+    const navLinks = document.querySelectorAll("#main-nav ul li a");
+
+    function scrollLink(e) {    
+            e.preventDefault(); 
+            console.log(e.currentTarget.hash);
+            let selectedLink = e.currentTarget.hash;
+            gsap.to(window, {duration: 1, scrollTo:{y:`${selectedLink}`, offsetY:100 }});
     }
 
-    for(let i=0; i<frameCount; i++) {
-        const img = new Image();
-        img.src = `images/Untitled${(i+1).toString().padStart(4, '0')}.webp`;
-        images.push(img);
-    }
+    navLinks.forEach((link) => {
+        link.addEventListener("click", scrollLink);
+    });
 
-    gsap.to(buds, {
-        frame: 90,
-        snap: "frame",
-        scrollTrigger: {
-            trigger: "#explode-view",
-            pin: true,
-            scrub: 1,
+    gsap.to("#explode-view", 3, 
+		{scrollTrigger: {
+			trigger: "#explode-view",
+			toggleActions:"restart pause reverse none",
             markers: true,
-            start: "top top"
-        },
-        onUpdate: render
-    })
-
-    images[0].addEventListener("load", render);
-
-    function render() {
-        console.log(buds.frame);
-        console.log(images[buds.frame]);
-        context.clearRect(0,0, canvas.width, canvas.height);
-        context.drawImage(images[buds.frame],0,0);
-    }
-    
+            // start: "top center"
+            start: "center bottom",
+            end: "bottom center"
+		}, 
+		x:800, ease:Bounce.easeOut
+		});
+  
 })();
