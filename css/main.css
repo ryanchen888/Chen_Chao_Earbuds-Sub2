@@ -425,6 +425,16 @@ img {
   }
 }
 #explode-view {
-  margin: 20px;
+  margin: 10px;
   max-width: 100%;
+  background: url("../images/bg_firstview.jpg");
+  background-size: 100%;
+  width: 40vw;
+}
+
+#first-view {
+  max-width: 100%;
+  margin-top: 30px;
+  background: url("../images/bg_firstview.jpg");
+  background-size: 100%;
 }/*# sourceMappingURL=main.css.map */
