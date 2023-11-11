@@ -1,5 +1,12 @@
 .box_video {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    // display: grid;
+    // grid-template-columns: repeat(12, 1fr);
 }
 
+:root {
+    --plyr-color-main: rgb(138,182,77);
+    --plyr-control-icon-size: 15px;
+    --plyr-control-radius: 20px;
+    --plyr-font-family: "Helvetica Neue", Helvetica, sans-serif;
+    --plyr-controls-spacing: 15px;
+  }
