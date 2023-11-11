@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ]
   
     function modelLoaded() {
-      console.log(hotspots);
+      // console.log(hotspots);
       hotspots.forEach(hotspot => {
         hotspot.style.display = "block";
       });
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function loadInfo() {
       infoBoxes.forEach((infoBox, index) => {
       let selected = document.querySelector(`#hotspot-${index+1}`);
-      console.log(selected);
+      // console.log(selected);
     
       
       let h2 = document.createElement("h2");
@@ -112,12 +112,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function onDown() {
         dragging = true;
-        console.log("on Down called");
+        // console.log("on Down called");
     }
 
     function onUp() {
         dragging = false;
-        console.log("on Up called");
+        // console.log("on Up called");
     }
 
     function onMove(event) {

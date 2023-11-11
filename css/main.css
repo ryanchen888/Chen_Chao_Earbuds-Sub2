@@ -1,14 +1,13 @@
 body {
-  background-color: #272727;
+  background-color: #000000;
 }
 
-.box_video {
-  height: 350px;
-  background-color: #999999;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 10px;
-  border-radius: 10px;
+.animation_1 {
+  margin: 20px auto;
+}
+
+.animation_2 {
+  margin: 50px auto;
 }
 
 #hotSpots-pic {
@@ -88,9 +87,12 @@ body {
     font-size: 20px;
   }
 }
-.box_video {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+:root {
+  --plyr-color-main: rgb(138,182,77);
+  --plyr-control-icon-size: 15px;
+  --plyr-control-radius: 20px;
+  --plyr-font-family: "Helvetica Neue", Helvetica, sans-serif;
+  --plyr-controls-spacing: 15px;
 }
 
 model-viewer {
@@ -315,7 +317,7 @@ model-viewer > #ar-prompt > img {
   }
 }
 .box_x-ray {
-  background-color: #272727;
+  background-color: #000000;
 }
 
 #outerShell {
@@ -429,12 +431,13 @@ img {
   max-width: 100%;
   background: url("../images/bg_firstview.jpg");
   background-size: 100%;
-  width: 40vw;
+  width: 70vw;
 }
 
 #first-view {
   max-width: 100%;
   margin-top: 30px;
   background: url("../images/bg_firstview.jpg");
-  background-size: 100%;
+  background-size: cover;
+  background-attachment: fixed;
 }/*# sourceMappingURL=main.css.map */

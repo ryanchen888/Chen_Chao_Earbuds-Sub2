@@ -23,12 +23,22 @@
         </div>
     </header>
 
-    <div class="col-span-full">
-        <canvas id="first-view"></canvas> 
+    <div id="animation_1" class="grid-con">
+        <div class="col-span-full">
+            <canvas id="first-view"></canvas> 
+        </div>
     </div>
 
     <div class="box_video"  id="video">
-        <div class="grid-con">Video</div>
+        <div class="grid-con">
+            <section class="col-span-full" id="player-container">
+                <video controls poster="audio/bg.jpg">
+                    <source src="audio/Chen_Chao_video.mp4" type="video/mp4">
+                    <!-- <source src="video/video.webm" type="video/webm"> -->
+                    <p>You're using a very old browser, that doesn;t support video playback.</p>
+                </video>
+            </section>
+        </div>
     </div>
 
     <div class="box_hot-spots">
@@ -51,9 +61,7 @@
                     <div class="HotspotAnnotation" id="hotspot-4"></div>
                 </button>
           
-                <button slot="ar-button" id="ar-button">
-                    View in your space
-                </button>
+                <button slot="ar-button" id="ar-button"></button>
           
                 <div id="ar-prompt">
                     <img src="images/ar_hand_prompt.png">
@@ -83,8 +91,10 @@
         </div>
     </div>
 
-    <div class="col-span-full">
-        <canvas id="explode-view"></canvas> 
+    <div id="animation_2" class="grid-con">
+        <div class="col-span-full">
+            <canvas id="explode-view"></canvas> 
+        </div>
     </div>
  
     <div class="box_pic" id="pics">
@@ -126,9 +136,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <!-- ScrollTo plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
-    <script src="js/first-view.js"></script>
-    <script src="js/explode-view.js"></script>
-    <script src="js/explode-view-1.js"></script>
+    <script src="js/animation_1.js"></script>
+    <script src="js/animation_2_scrollTrigger.js"></script>
+    <script src="js/animation_2.js"></script>
     <script src="js/main.js"></script>
     
 </body>

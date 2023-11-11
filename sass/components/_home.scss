@@ -1,5 +1,5 @@
 body {
-    background-color: #272727;
+    background-color: #000000;
 }
 // .box_nav {
 //     height: 100px;
@@ -10,13 +10,21 @@ body {
 //     border-radius: 10px;
 // }
 
-.box_video {
-    height: 350px;
-    background-color: #999999;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    border-radius: 10px;
+// .box_video {
+//     height: 350px;
+//     background-color: #999999;
+//     margin-left: 20px;
+//     margin-right: 20px;
+//     margin-top: 10px;
+//     border-radius: 10px;
+// }
+
+.animation_1 {
+    margin: 20px auto;
+}
+
+.animation_2 {
+    margin: 50px auto;
 }
 
 #hotSpots-pic {
