@@ -27,7 +27,7 @@
             start: "center bottom",
             end: "bottom center"
 		}, 
-		x:200, y:300, ease:Bounce.easeOut
+		x:200, y:200, ease:Bounce.easeOut
 		});
   
 })();

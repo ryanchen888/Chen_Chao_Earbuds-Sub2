@@ -1,5 +1,29 @@
 
- 
+#text-box {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #ffffff;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+#text-box h2 { 
+  font-size: 30px;
+  margin-bottom: 80px;
+}
+#text-box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#text-box p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+#HP-title {
+  color: #fff;
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+
 model-viewer {
   width: auto;
   max-width: 1200px;
@@ -128,6 +152,8 @@ model-viewer > #ar-prompt > img {
 
 @media screen and (max-width: 390px) {
 
+ 
+
   #HP-box {
     grid-template-columns: 1fr;
   }
@@ -180,7 +206,7 @@ model-viewer > #ar-prompt > img {
 
 }
 
-@media screen and (min-width: 390px) and (max-width: 768px) {
+@media screen and (min-width: 391px) and (max-width: 768px) {
     #HP-box {
       grid-template-columns: 1fr;
     }
@@ -192,10 +218,44 @@ model-viewer > #ar-prompt > img {
       background-color: #272727;
       margin: 0 auto;
     }
+
+    .HotspotAnnotation{
+      visibility: hidden;
+      background: #414141;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+      color: rgba(255, 255, 255, 0.8);
+      display: block;
+      font-family: Futura, Helvetica Neue, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      left: calc(100% + 1em);
+      max-width: 200px;
+      overflow-wrap: break-word;
+      padding: 0.5em 1em;
+      position: absolute;
+      top: 50%;
+      width: max-content;
+      text-align: left;
+    }
 }
   
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+
+  #text-box {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #6c6c6c;
+  }
+  
+  #text-box h3:hover {
+    color: #ffffff;
+  }
+  
+  #text-box p:hover {
+    color: #ffffff;
+  }
+  
     #HP-box {
       grid-template-columns: 1fr;
     }
@@ -216,16 +276,32 @@ model-viewer > #ar-prompt > img {
         background-color: #272727;
         margin: 0 auto;
       }
+
+      
 }
 
 @media screen and (min-width: 1200px) {
+
+  #text-box {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #6c6c6c;
+  }
+  
+  #text-box h3:hover {
+    color: #ffffff;
+  }
+  
+  #text-box p:hover {
+    color: #ffffff;
+  }
+  
   
   #hotSpots-pic {
     height: 600px;
   }
 
     #text-box {
-      height: 150px;
+      // height: 150px;
       grid-column: 5/-1;
     }
 

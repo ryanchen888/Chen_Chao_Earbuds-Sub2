@@ -36,14 +36,14 @@ body {
     border-radius: 10px;
 }
 
-#text-box {
-    height: 120px;
-    background-color: #999999;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    border-radius: 10px;
-}
+// #text-box {
+//     height: 120px;
+//     background-color: #999999;
+//     margin-left: 20px;
+//     margin-right: 20px;
+//     margin-top: 10px;
+//     border-radius: 10px;
+// }
 
 .box_x-ray {
     background-color: #999999;
@@ -60,3 +60,19 @@ body {
 //     margin-top: 10px;
 //     border-radius: 10px;
 // }
+
+#title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: #fff;
+    margin-top: 100px;
+    text-shadow: 3px 7px 7px rgba($color: #ffffff, $alpha: 1.0);
+}
+
+#title:hover {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: #525252;
+    margin-top: 100px;
+    text-shadow: 3px 7px 7px rgba($color: #5d5d5d, $alpha: 1.0);
+}

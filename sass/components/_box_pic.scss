@@ -61,6 +61,15 @@ img {
       grid-gap: 20px;
       justify-items: center;
     }
+
+    .close-lightbox {
+      position: absolute;
+      top: 15%;
+      right: 20px;
+      font-size: 100px;
+      color: #454545;
+      cursor: pointer;
+    }
 }
   
 
@@ -70,5 +79,16 @@ img {
       grid-gap: 20px;
       justify-items: center;
     }
+
+    .close-lightbox {
+      position: absolute;
+      top: 10%;
+      right: 20px;
+      font-size: 100px;
+      color: #454545;
+      cursor: pointer;
+    }
+    
+
 }
   

@@ -23,19 +23,21 @@
         </div>
     </header>
 
-    <div id="animation_1" class="grid-con">
-        <div class="col-span-full">
-            <canvas id="first-view"></canvas> 
+    <div class="animation_1">
+        <div class="grid-con">
+            <div class="col-span-full">
+                <canvas id="first-view"></canvas> 
+            </div>
         </div>
     </div>
 
     <div class="box_video"  id="video">
         <div class="grid-con">
+            <h2 class="col-span-full">&nbsp;&nbsp;&nbsp;&nbsp;VOCO -</h2>
+            <h3 class="col-span-full">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Gateway to Tranquil Soundscapes.</h3>
             <section class="col-span-full" id="player-container">
                 <video controls poster="audio/bg.jpg">
                     <source src="audio/Chen_Chao_video.mp4" type="video/mp4">
-                    <!-- <source src="video/video.webm" type="video/webm"> -->
-                    <p>You're using a very old browser, that doesn;t support video playback.</p>
                 </video>
             </section>
         </div>
@@ -43,6 +45,7 @@
 
     <div class="box_hot-spots">
         <div id="HP-box" class="grid-con">
+            <h2 id="HP-title" class="col-span-full">Discover innovation that speaks to your senses – where style meets functionality.</h2>
             <div id="hotSpots-pic" class="col-span m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-11"><model-viewer id="model" src="images/earbuds_1.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="images/poster.webp" shadow-intensity="1">
 
                 <button class="Hotspot" slot="hotspot-1" data-position="-0.1553309522259991m 196.75075960981792m 355.6584497632459m" data-normal="0.21885651281984841m 0.9730279781878786m 0.07292722715107716m" data-visibility-attribute="visible">
@@ -68,7 +71,21 @@
                 </div>
           
               </model-viewer></div>
-            <div id="text-box" class="col-span m-col-start-7 m-col-end-10 l-col-start-9 l-col-end-13">Text</div>
+            <div id="text-box" class="col-span m-col-start-7 m-col-end-10 l-col-start-9 l-col-end-13">
+                <h2>Explore the cutting-edge features of our latest headphones:</h2>
+
+                    <h3>1 - Control at Your Fingertips:</h3>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effortlessly manage playback, calls, and more with our intuitive control button.</p>
+                
+                    <h3>2 - Custom Comfort:</h3>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tailor your fit with our intelligent rotating axis for maximum comfort.</p>
+                
+                    <h3>3 - Immersive Sound:</h3>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enjoy noise-canceling earplugs made of eco-friendly silicone for a superior audio experience.</p>
+                
+                    <h3>4- Swift Charging:</h3>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our patented technology ensures 80% charge in under 10 minutes. Stay powered, stay connected.</p>
+            </div>
         </div>
     </div>
     
@@ -96,7 +113,9 @@
             <canvas id="explode-view"></canvas> 
         </div>
     </div>
- 
+    <div id="title" class="grid-con">
+        <h2 class="col-span-full">WE ARE COMMITTED TO EXCELLENCE</h2>
+    </div>
     <div class="box_pic" id="pics">
         <div id="pic1">
             <img class="lightbox-trigger" src="images/1.jpg" alt="">
@@ -122,6 +141,34 @@
         <img class="lightbox-content no-hover-effect" src="images/1.jpg" alt="Large Image 1">
     </div>
 
+    <footer id="footer">
+        <div class="grid-con">
+            <div id="socialmedia">
+                <ul>
+                    <li><a href="#"><img src="images/facebook.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="images/linkedin.svg" alt="linkedin"></a></li>
+                    <li><a href="#"><img src="images/youtube.svg" alt="youtube"></a></li>
+                </ul>
+            </div>
+
+            <div id="news-info" class="col-start-2 col-end-4 m-col-start-9 m-col-end-12 l-col-start-10 l-col-end-12">
+                <ul>
+                    <h3>News&Info</h3>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">About VOCO</a></li>
+                    <li><a href="#">Product Support</a></li>
+                    <li><a href="#">Product Manuals</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+            </div>
+
+            <div id="address" class="col-span-full">
+                <h3>www.vocoearbuds.ca</h3>
+                <p>1583 Dandas Street, London, Ontario, Canada</p>
+            </div>
+
+        </div>
+    </footer>
 
 
 

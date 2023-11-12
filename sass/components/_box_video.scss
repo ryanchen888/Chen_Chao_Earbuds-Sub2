@@ -1,7 +1,7 @@
-.box_video {
-    // display: grid;
-    // grid-template-columns: repeat(12, 1fr);
-}
+// .box_video {
+//     // display: grid;
+//     // grid-template-columns: repeat(12, 1fr);
+// }
 
 :root {
     --plyr-color-main: rgb(138,182,77);
@@ -10,3 +10,36 @@
     --plyr-font-family: "Helvetica Neue", Helvetica, sans-serif;
     --plyr-controls-spacing: 15px;
   }
+
+#video h2 {
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#video h3 {
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+#video {
+  margin-top: 200px;
+}
+
+@media screen and (min-width: 390px) and (max-width: 768px) {
+    #video h2 {font-size: 60px;}
+    #video h3 {font-size: 30px;}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    #video h2 {font-size: 80px;}
+    #video h3 {font-size: 40px;}
+}
+
+@media screen and (min-width: 1201px) {
+  #video h2 {font-size: 100px;}
+  #video h3 {font-size: 50px;}
+}
